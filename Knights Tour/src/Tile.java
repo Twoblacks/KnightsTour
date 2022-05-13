@@ -8,6 +8,8 @@ public class Tile {
         this.collumn = collumn;
         this.taken = taken;
     }
+    public Tile(){
+    }
 
     public int getRow(){
         return row;
@@ -19,7 +21,10 @@ public class Tile {
 
     public int getTaken() { return taken; }
     public void setTaken(int num) { taken = num; }
+    //public String toString() {
+    //    return "(" + row + " " + collumn+ ")";
+    //}
     public String toString() {
-        return "(" + row + " " + collumn + ")";
+        return "" + taken;
     }
 }
