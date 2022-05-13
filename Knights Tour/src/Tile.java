@@ -21,10 +21,10 @@ public class Tile {
 
     public int getTaken() { return taken; }
     public void setTaken(int num) { taken = num; }
-    //public String toString() {
-    //    return "(" + row + " " + collumn+ ")";
-    //}
-    public String toString() {
-        return "" + taken;
+    //public String toString() {return "(" + row + " " + collumn+ ")";}
+    public String toString() {return "" + taken;}
+
+    public boolean equalTo(Tile til){
+        return(row == til.getRow() && collumn == til.getCollumn());
     }
 }
